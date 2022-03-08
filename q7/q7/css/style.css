@@ -1,1 +1,63 @@
 @charset "UTF-8";
+.balloon {
+    /* 中央寄せに配置 */
+    margin: 0 auto;
+    background: #fad296;
+    width: 500px;
+    padding: 20px;
+    position: relative;
+    font-size: 16px;
+    line-height: 16px;
+    border: 5px solid #8f5a0a;
+    /* radiusで枠線の角を丸くする */
+    border-radius: 20px;
+}
+
+.balloon:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 15px;
+    bottom: -20px;
+    border-top: 20px solid #8f5a0a;
+    /* transparentで指定した要素は色が透明になる */
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+
+.balloon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 20px;
+    bottom: -15px;
+    border-top: 15px solid #fad296;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+
+
+/* answerより。同じ要素はまとめて書けばCSSもすっきりさせられる */
+
+
+/* .blowing--box:before,
+.blowing--box:after {
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+    left: 30px;
+}
+
+.blowing--box:before {
+    border-top: 20px solid #8f5a0a;
+    bottom: -45px;
+}
+
+.blowing--box:after {
+    border-top: 20px solid #fad296;
+    bottom: -38px;
+} */
