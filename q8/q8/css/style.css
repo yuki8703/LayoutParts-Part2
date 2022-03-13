@@ -1,2 +1,39 @@
 @charset "UTF-8";
 
+/* CSSで背景を挿入する */
+
+.background--image {
+    background-image: url("../../image/coffee-background.jpg");
+}
+
+
+/* 背景のリピートを解除 */
+
+.background--no--repeate {
+    background-image: url("../../image/coffee-background.jpg");
+    background-repeat: no-repeat;
+}
+
+
+/* 背景を中央寄せにして画面横幅いっぱいに引き延ばす */
+
+.background--cover {
+    background-image: url("../../image/coffee-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* 背景を中央に寄せにして収まるように調整 、リピート解除*/
+
+.background--contain {
+    background-image: url("../../image/coffee-background.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    height: 500px;
+}
