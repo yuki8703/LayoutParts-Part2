@@ -1,4 +1,60 @@
 @charset "UTF-8";
 
 /* カード内の画像は以下のURLを使用して下さい */
+
+
 /* https://picsum.photos/id/1005/200/300 */
+
+
+/* animationを使いスタイルの間のアニメーションを適用  */
+
+
+/* Q9-1ここから */
+
+.animation--fade--in {
+    animation: fadeIn 4s ease 0s 1 normal;
+}
+
+
+/* @keyframes は CSS のアットルールで、アニメーションの流れに沿ったキーフレーム（または中間地点）のスタイルを定義することによって、一連の CSS アニメーションの中間ステップを制御  */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+
+/* Q9-1ここまで */
+
+
+/* Q9-2ここから */
+
+.animation--fade--out {
+    animation: fadeOut 4s ease 4s 1 normal;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+
+/* Q9-2ここまで */
+
+.content {
+    background-color: #76ff826b;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+
+/* background-image: url("https://picsum.photos/id/1005/200/300"); */
