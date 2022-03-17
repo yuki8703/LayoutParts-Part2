@@ -21,27 +21,20 @@
 
 /* Q9-1ここから */
 
-
-/* animationを使いスタイルの間のアニメーションを適用  */
-
 .animation--fade--in {
     animation: fadeIn 4s ease 0s 1 normal;
+    /* animationを使いスタイルの間のアニメーションを適用  */
 }
 
 
 /* @keyframes は CSS のアットルールで、アニメーションの流れに沿ったキーフレーム（または中間地点）のスタイルを定義することによって、一連の CSS アニメーションの中間ステップを制御  */
 
-
-/* 0% はアニメーションシーケンスの始点、100% はアニメーションシーケンスの終点を表す  */
-
-
-/* opacityは要素の不透明度を設定  */
-
 @keyframes fadeIn {
     0% {
-        opacity: 0
+        opacity: 0/* opacityは要素の不透明度を設定。   0% はアニメーションシーケンスの始点 */
     }
     100% {
+        /*100% はアニメーションシーケンスの終点を表す  */
         opacity: 1
     }
 }
@@ -71,11 +64,9 @@
 
 /* Q9-3ここから */
 
-
-/* rorarionで回転するように指定、infiniteで永遠に継続させる  */
-
 .animation--rotation {
     animation: 4s linear infinite rotation;
+    /* rorarionで回転するように指定、infiniteで永遠に継続させる  */
 }
 
 @keyframes rotation {
@@ -93,11 +84,42 @@
 
 /* Q9-4~Q9-11までの箱 */
 
+.blue--box {
+    background-color: #331aefd0;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
 
 /* Q9-4ここから */
 
+.hover--color:hover {
+    background: #ff27e2c9;
+}
+
 
 /* Q9-4ここまで */
+
+
+/* Q9-5ここから */
+
+.hover--rotate:hover {
+    transform: rotate(360deg);
+}
+
+
+/* Q9-5ここまで */
+
+
+/* Q9-6ここから */
+
+.hover--up:hover {
+    transform: translate(50px 0);
+}
+
+
+/* Q9-6ここまで */
 
 
 /* background-image: url("https://picsum.photos/id/1005/200/300"); */
