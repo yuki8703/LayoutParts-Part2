@@ -122,4 +122,55 @@
 /* Q9-6ここまで */
 
 
+/* Q9-7ここから */
+
+.hover--right:hover {
+    transform: translate(0px 50);
+}
+
+
+/* Q9-7ここまで */
+
+
+/* Q9-8ここから */
+
+.hover--height:hover {
+    height: 300px;
+}
+
+
+/* Q9-8ここまで */
+
+
+/* Q9-9ここから */
+
+.hover--width:hover {
+    width: 500px;
+}
+
+
+/* Q9-9ここまで */
+
+
+/* Q9-10ここから */
+
+.hover--border:hover {
+    border: 10px #00ffe5 solid;
+    box-sizing: border-box;
+}
+
+
+/* Q9-10ここまで */
+
+
+/* Q9-11ここから */
+
+.hover--shadow:hover {
+    box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+
+/* Q9-11ここまで */
+
+
 /* background-image: url("https://picsum.photos/id/1005/200/300"); */
