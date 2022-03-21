@@ -89,6 +89,7 @@
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    transition: .5s;
 }
 
 
@@ -115,7 +116,7 @@
 /* Q9-6ここから */
 
 .hover--up:hover {
-    transform: translate(50px 0);
+    transform: translate(0, -20%);
 }
 
 
@@ -125,7 +126,7 @@
 /* Q9-7ここから */
 
 .hover--right:hover {
-    transform: translate(0px 50);
+    transform: translate(50%, 0);
 }
 
 
@@ -173,4 +174,55 @@
 /* Q9-11ここまで */
 
 
-/* background-image: url("https://picsum.photos/id/1005/200/300"); */
+/* Q9-12ここから */
+
+.circle--meter {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: solid 10px #ecf1f2;
+    border-top: solid 10px #14ff4bcd;
+    animation: spin 1.1s linear infinite;
+}
+
+
+/* rorarionで回転するように指定、infiniteで永遠に継続させる  */
+
+
+/* Q9-12ここまで */
+
+.staff--list {
+    display: flex;
+}
+
+.icon {
+    border-radius: 50%;
+    background: url("https://picsum.photos/id/1005/200/300") no-repeat center/cover;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+}
+
+.staff--card {
+    width: 300px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-left: 0;
+    transition: .5s;
+}
+
+.staff--card:hover {
+    box-shadow: 0px 0px 10px 3px #424242d0;
+    z-index: 1;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.staff--card:first-child {
+    border-left: 1px solid #000000;
+    ;
+}
