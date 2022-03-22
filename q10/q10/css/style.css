@@ -1,1 +1,42 @@
 @charset "UTF-8";
+.display--flex {
+    display: flex;
+    justify-content: center;
+}
+
+.pointer--button {
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0 15px;
+    margin-left: 30px;
+    cursor: pointer;
+    /*マウスポインターが要素の上にいるときに表示されるマウスカーソルの種類を設定 */
+}
+
+.red--button {
+    background-color: #fd0f0fd9;
+}
+
+.blue--button {
+    background-color: #170ffdd9;
+}
+
+.green--button {
+    background-color: #0ffd0fd9;
+    color: #000;
+}
+
+.red--shadow {
+    background-color: #fd0f0fd9;
+}
+
+.blue--shadow {
+    background-color: #170ffdd9;
+}
+
+.green--shadow {
+    background-color: #0ffd0fd9;
+    color: #000;
+}
