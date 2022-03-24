@@ -29,14 +29,88 @@
 }
 
 .red--shadow {
+    box-shadow: 0px 5px rgba(63, 5, 5, 0.851);
     background-color: #fd0f0fd9;
 }
 
 .blue--shadow {
+    box-shadow: 0px 5px rgba(5, 13, 63, 0.851);
     background-color: #170ffdd9;
 }
 
 .green--shadow {
+    box-shadow: 0px 5px rgba(5, 63, 5, 0.851);
     background-color: #0ffd0fd9;
     color: #000;
+}
+
+.red--active {
+    box-shadow: 0px 5px rgba(63, 5, 5, 0.851);
+    background-color: #fd0f0fd9;
+}
+
+.blue--active {
+    box-shadow: 0px 5px rgba(5, 13, 63, 0.851);
+    background-color: #170ffdd9;
+}
+
+.green--active {
+    box-shadow: 0px 5px rgba(5, 63, 5, 0.851);
+    background-color: #0ffd0fd9;
+    color: #000;
+}
+
+.red--active:active,
+.blue--active:active,
+.green--active:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 1px;
+}
+
+.double--button {
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-left: 30px;
+    color: #67c5ff;
+    border: 4px double #67c5ff;
+    cursor: pointer;
+}
+
+.double--button:hover {
+    background: #fffbef;
+}
+
+.dotted--button {
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-left: 30px;
+    color: #67c5ff;
+    border: 4px dotted #67c5ff;
+    cursor: pointer;
+}
+
+.dotted--button:hover {
+    color: #67c5ff;
+    border: 4px dashed #75caff;
+}
+
+.dashed--button {
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-left: 30px;
+    color: #0079a5f8;
+    background: #d0edfff8;
+    border: 4px dashed #67c5ff;
+    cursor: pointer;
+}
+
+.dashed--button:hover {
+    color: #67c5ff;
+    background: #ffffff;
 }
